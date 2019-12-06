@@ -1,5 +1,5 @@
 <template>
-    <div id="sports">
+    <div id="sports" v-bind:style="{ backgroundColor: this.$store.state.bgColor }">
         <div id="sports-header">GAMES WE OFFER</div>
  <v-container fluid>
         <v-row dense>
@@ -41,6 +41,7 @@
 </template>
 
 <script>
+
 export default {
     name: 'Sports',
     data: () => ({
@@ -72,11 +73,8 @@ export default {
 #sports {
     position: relative;
     display: block;
-    top: 80vh;
     width: 100%;
     padding: 5%;
-    /* z-index: 10; */
-    background-color: white;
 }
 
 .cards {

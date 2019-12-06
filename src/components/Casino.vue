@@ -1,27 +1,24 @@
 <template>
     <div class="wrapper" v-bind:style="{ backgroundColor: this.$store.state.bgColor }">
-        <div class="description" v-bind:style="{ color: this.$store.state.textColor }">
-            Enjoy the fastest loading live betting website in Kenya.
-             Unaweza bet game ikiendelea. Click <a class="link-to-betika" href="https://betika.com/live">here</a> to PLAY live.
-        </div>
-
         <div class="liveimage" :style="{ backgroundImage: 'url(' + image + ')' }"></div>
+
+        <div class="description" v-bind:style="{ color: this.$store.state.textColor }">
+            Play the most exciting online casino games at Betika -
+             with a selection of <a class="link-to-betika" href="https://betika.com/casino">slots, Roulette, Blackjack</a> and more
+        </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'LiveBetting',
+    name: 'Casino',
     data(){
         return{
-            image: require('../assets/livebets.png')
+            image: require('../assets/casino.jpg')
         }
     },
     mounted(){
-        // store.commit('setDarkMode');
-        // console.log('vuex store=========>', store.state.darkMode);
     },
-    
 }
 </script>
 
@@ -33,12 +30,12 @@ export default {
 .wrapper {
     display: flex;
     position: relative;
-    /* z-index: 200; */
     width: 100%;
     height: 100vh;
-    padding-top: 10vh;
+    padding-top: 30vh;
     justify-content: center;
     align-items: center;
+    padding-bottom: 200px;
 }
 
 .description {
@@ -57,5 +54,6 @@ export default {
     background-size: cover;
     margin: 30px;
     border-radius: 5px;
+    background-position: center;
 }
 </style>

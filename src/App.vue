@@ -13,7 +13,21 @@ export default {
   name: 'app',
   components: {
     TopBar,
-  }
+  },
+  mounted() {
+    this.setMode();
+},
+methods: {
+    setMode(){
+        const isDark = localStorage.getItem('isDark');
+        if (isDark === null || isDark === 'false'){
+          this.$store.dispatch('setLightMode');
+        } else {
+          this.$store.dispatch('setLightMode');
+        }
+    },
+}
+  
 }
 </script>
 

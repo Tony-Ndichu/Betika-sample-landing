@@ -59,16 +59,9 @@
                             <v-icon v-scroll-to="'#sports-header'" dark>fas fa-chevron-down</v-icon>
                         </v-btn>
                 </div>
-            </transition>
-
-            
+            </transition>         
 
         </div>
-
-
-  <iframe src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Scott_Holmes/Inspiring__Upbeat_Music/Scott_Holmes_-_06_-_Clear_Progress.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-</iframe> 
-
         </div>
 </template>
 
@@ -163,8 +156,6 @@ export default {
             this.scrollButton = true; 
             }, 28000);
         },
-
-
   }
 }
 </script>
@@ -177,7 +168,7 @@ export default {
     top: 0;
     left: 0;
     right: 0;
-    height: 100vh;
+    height: 50vh;
     color: black;
 
 }

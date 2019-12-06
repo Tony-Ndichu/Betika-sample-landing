@@ -10,14 +10,18 @@
   "dependencies": {
     "core-js": "^3.3.2",
     "vue": "^2.6.10",
+    "vue-youtube-embed": "^2.2.2",
     "vue2-animate": "^2.1.2",
-    "vuetify": "^2.1.0"
+    "vueperslides": "^1.21.0",
+    "vuetify": "^2.1.0",
+    "vuex": "^3.1.2"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
     "@vue/cli-plugin-babel": "^4.0.0",
-    "@vue/cli-plugin-eslint": "^4.0.0",
+    "@vue/cli-plugin-eslint": "^4.0.5",
     "@vue/cli-service": "^4.0.0",
+    "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
@@ -35,7 +39,8 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "@vue/standard"
     ],
     "rules": {},
     "parserOptions": {
